@@ -20,7 +20,7 @@ header {
     align-items: center;
     padding: 6px 16px;
     z-index: 1000;
-    transition: 0.5s;
+    transition: 0.2s;
     background: transparent; /* прозрачная шапка */
     height: 80px;
 }
@@ -47,7 +47,7 @@ header.sticky {
     font-weight: bold;
     text-decoration: none;
     color: #fff;
-    transition: 0.5s;
+    transition: 0.2s;
     height: 70px;
     width: 90px;
 }
@@ -63,21 +63,21 @@ header.sticky .logo {
     text-decoration: none;
     color: #F7F4EF;
     font-weight: 500;
-    transition: 0.5s;
-    font-size: 14px;
+    transition: 0.2s;
+    font-size: 12px;
 }
 
 header.sticky .left-menu a,
 header.sticky .right-menu a {
-    color: #333;
+    color: #C99F5E;
 }
 
 /* Иконки */
 .icons a {
-    margin-left: 15px;
     color: #fff;
-    font-size: 18px;
-    transition: 0.3s;
+    font-size: 14px;
+    transition: 0.2s;
+    font-weight: 100;
 }
 
 header.sticky .icons a {
@@ -89,8 +89,8 @@ header.sticky .icons a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 25px;
-    height: 18px;
+    width: 20px;
+    height: 12px;
     cursor: pointer;
     margin: 19px;
 }
@@ -99,7 +99,7 @@ header.sticky .icons a {
     display: block;
     height: 1px;
     background: #fff;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 header.sticky .burger span {
@@ -111,8 +111,8 @@ header.sticky .burger span {
     position: relative;
     display: flex;
     border-bottom: 1px solid #F7F4EF;
-    margin-left: 25px;
     gap: 8px;
+    width: 110px;
 }
 
 .search input {
@@ -121,7 +121,8 @@ header.sticky .burger span {
     background: transparent;
     color: #F7F4EF;
     outline: none;
-    transition: 0.3s;
+    transition: 0.2s;
+    width: 100%;
 }
 
 .search input::placeholder {
@@ -131,8 +132,22 @@ header.sticky .burger span {
 
 header.sticky .search input {
     border-color: #ccc;
-    background: #fff;
+    background: transparent;
     color: #333;
+}
+
+header.sticky .search input::placeholder {
+    border-color: #ccc;
+    background: transparent;
+    color: #C99F5E;
+}
+
+header.sticky .burger span {
+    background-color: #C99F5E;
+}
+
+header.sticky .search {
+    border-bottom: 1px solid #C99F5E;
 }
 
 .search i {
@@ -190,7 +205,7 @@ header.sticky .search i {
     text-decoration: none;
     border-radius: 30px;
     font-weight: 600;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 .btn:hover {
@@ -237,7 +252,7 @@ header.sticky .search i {
     width: 50px;
     height: 2px;
     background: rgba(255,255,255,0.4) !important;
-    transition: .3s;
+    transition: .2s;
 }
 
 .owl-dot.active span {
@@ -272,7 +287,7 @@ header.sticky .search i {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 .owl-prev svg,
@@ -298,15 +313,37 @@ header.sticky .search i {
 }
 
 .header-right {
-    justify-content: end;
+    justify-content: space-between;
 }
 
 .header-left {
-    justify-content: start;
+    justify-content: space-between;
 }
 
-.left-menu {
-    margin-left: 70px;
+.left-menu {display: flex;gap: 20px;}
+
+.icons_global {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 7px;
+    text-decoration: none;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.sticky .icons_global {
+    color: #C99F5E !important;
+}
+
+.right-menu {
+    display: flex;
+    gap: 20px;
 }
 
 /* Адаптивка (мобильные устройства) */

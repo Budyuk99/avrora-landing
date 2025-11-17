@@ -43,11 +43,28 @@ $(document).ready(function(){
         }
     });
 
-    $(window).scroll(function(){
-        if($(this).scrollTop() > 50){
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 50) {
+            // Добавляем класс sticky к шапке
             $('#header').addClass('sticky');
+
+            // Заменяем картинки на "sticky" версии
+            $('.search img').attr('src', '/assets/images/search_sticky.svg');
+            $('.icons_user img').attr('src', '/assets/images/user_sticky.svg');
+            $('.icons_heart img').attr('src', '/assets/images/heart_sticky.svg');
+            $('.icons_cart img').attr('src', '/assets/images/shopping-bag_sticky.svg');
+            $('.icons_global img').attr('src', '/assets/images/global_sticky.svg');
+
         } else {
+            // Убираем sticky
             $('#header').removeClass('sticky');
+
+            // Возвращаем исходные картинки
+            $('.search img').attr('src', '/assets/images/search.svg');
+            $('.icons_user img').attr('src', '/assets/images/user.svg');
+            $('.icons_heart img').attr('src', '/assets/images/heart.svg');
+            $('.icons_cart img').attr('src', '/assets/images/shopping-bag.svg');
+            $('.icons_global img').attr('src', '/assets/images/global.svg');
         }
     });
 });
