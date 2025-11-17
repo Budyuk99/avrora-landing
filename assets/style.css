@@ -229,6 +229,30 @@ header.sticky .search i {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
+.slide-content-2 {
+    position: absolute;
+}
+
+.slide-content-2 p {
+    font-size: 19px;
+    text-transform: uppercase;
+}
+
+.slide-content-2 h2 {
+   color: #F6EFE5;
+   font-size: 30px;
+}
+
+.slide-content-3 h2 {
+    color: #F6EFE5;
+    font-size: 25px;
+}
+
+.slide-content-4 h2 {
+    color: #F6EFE5;
+    font-size: 25px;
+}
+
 .btn {
     display: inline-block;
     color: #C99F5E;
@@ -375,6 +399,28 @@ header.sticky .search i {
 .slide-content {
     position: absolute;
     bottom: 75px;
+}
+
+.text_first {
+    padding: 130px 409px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.text_first h2 {
+    color: #202020;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-align: center;
+}
+
+.text_first p {
+    color: #202020;
+    font-size: 15px;
+    text-align: center;
 }
 
 /* Адаптивка (мобильные устройства) */
