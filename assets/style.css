@@ -56,7 +56,6 @@ header {
 /* Белая шапка при скролле */
 header.sticky {
     background: #F7F4EF;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
 
 /* Блоки */
@@ -226,7 +225,6 @@ header.sticky .search i {
 .slide-content p {
     font-size: 20px;
     margin-bottom: 30px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .slide-content-2 {
@@ -236,6 +234,7 @@ header.sticky .search i {
 .slide-content-2 p {
     font-size: 19px;
     text-transform: uppercase;
+    margin-bottom: 11px;
 }
 
 .slide-content-2 h2 {
@@ -460,6 +459,13 @@ header.sticky .search i {
     padding: 0 18px;
 }
 
+.secondary-slider .slide-content-1 h2, 
+.secondary-slider .slide-content-2 h2, 
+.secondary-slider .slide-content-3 h2 {
+    color: #F7F4EF;
+    margin: 0;
+}
+
 .secondary-slider .owl-nav {
     position: absolute;
     top: 50%;
@@ -479,30 +485,27 @@ header.sticky .search i {
 }
 
 .slide-content-1 h2 {
-    color: #F7F4EF;
+    color: #202020;
     font-size: 25px;
-    margin: 0;
+    margin-bottom: 15px;
 }
 
 .slide-content-2 h2 {
     color: #F7F4EF;
     font-size: 25px;
     margin: 0;
+    margin-bottom: 11px;
 }
 
 .slide-content-3 h2 {
     color: #F7F4EF;
     font-size: 25px;
     margin: 0;
+    margin-bottom: 15px;
 }
 
-.owl-carousel .item > *:not(.owl-nav) {
-    pointer-events: none; /* остальные элементы не мешают свайпу */
-}
-
-.owl-carousel .item a,
-.owl-carousel .item button {
-    pointer-events: auto; /* кнопки кликабельны */
+.slide-content-2_text_2 {
+    margin-bottom: 15px !important;
 }
 
 /* Адаптивка (мобильные устройства) */
