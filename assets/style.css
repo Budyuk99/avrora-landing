@@ -508,6 +508,84 @@ header.sticky .search i {
     margin-bottom: 15px !important;
 }
 
+/* Секция на всю высоту */
+.full-banner {
+  height: 100vh; /* 100% высоты окна */
+  background-image: url('/assets/video/video.png'); /* путь к баннеру */
+  background-size: cover; /* покрытие всего блока */
+  background-position: center; /* центрирование картинки */
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center; /* горизонтальный центр */
+  align-items: center;     /* вертикальный центр */
+  text-align: center;      /* текст по центру */
+  color: #fff;             /* цвет текста */
+  position: relative;
+  margin-top: 15px;
+}
+
+/* Контент внутри баннера */
+.full-banner .banner-content h2 {
+  font-size: 25px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.full-banner .banner-content p {
+  font-size: 14px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+/* .full-banner {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+} */
+
+/* Видео растягивается на весь блок */
+/* .full-banner .banner-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+} */
+
+/* Контент поверх видео */
+/* .full-banner .banner-content {
+  position: relative;
+  z-index: 1;
+} */
+
+/* Стили текста */
+/* .full-banner .banner-content h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+} */
+
+/* .full-banner .banner-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+} */
+
+/* Кнопка */
+/* .full-banner .banner-content .btn {
+  padding: 0.8rem 2rem;
+  background-color: rgba(255, 51, 102, 0.8);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+} */
+
 /* Адаптивка (мобильные устройства) */
 @media(max-width: 1200px){
     .left-menu, .right-menu {
