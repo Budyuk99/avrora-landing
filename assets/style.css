@@ -1,8 +1,36 @@
+@font-face {
+    font-family: 'Didot';
+    src: url('/assets/fonts/Didot/Didot.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Didot';
+    src: url('/assets/fonts/Didot/Didot_Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Didot';
+    src: url('/assets/fonts/Didot/Didot_Italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Didot';
+    src: url('/assets/fonts/Didot/Didot_Title.otf') format('opentype');
+    font-weight: 900; /* или 800, зависит от файла */
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Didot', serif;
 }
 
 body {
@@ -186,9 +214,13 @@ header.sticky .search i {
 }
 
 .slide-content h2 {
-    font-size: 48px;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #202020;
+    line-height: 127%;
+    letter-spacing: 2px;
 }
 
 .slide-content p {
@@ -199,18 +231,12 @@ header.sticky .search i {
 
 .btn {
     display: inline-block;
-    padding: 12px 30px;
-    background: #fff;
-    color: #333;
-    text-decoration: none;
+    color: #C99F5E;
     border-radius: 30px;
-    font-weight: 600;
+    font-weight: 100;
     transition: 0.2s;
-}
-
-.btn:hover {
-    background: #f0f0f0;
-    transform: translateY(-3px);
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 /* Стили для навигации слайдера - ТОНКИЕ СТРЕЛКИ */
@@ -242,7 +268,7 @@ header.sticky .search i {
 /* Линии-точки */
 .owl-dots {
     position: absolute;
-    bottom: 35px;
+    bottom: 39px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -344,6 +370,11 @@ header.sticky .search i {
 .right-menu {
     display: flex;
     gap: 20px;
+}
+
+.slide-content {
+    position: absolute;
+    bottom: 75px;
 }
 
 /* Адаптивка (мобильные устройства) */

@@ -1,9 +1,8 @@
 $(document).ready(function(){
-    // Инициализация Owl Carousel с плавными переходами
+    // Инициализация Owl Carousel
     $(".owl-carousel").owlCarousel({
         items: 1,
         loop: true,
-        autoplay: true,
         autoplayTimeout: 5000,
         autoplayHoverPause: true,
         nav: true,
@@ -15,7 +14,7 @@ $(document).ready(function(){
         ]
     });
 
-    // ====== SVG линии для owl-dots ======
+    // SVG линии для owl-dots
     function updateDots() {
         $('.owl-dot').each(function(){
             if($(this).hasClass('active')){
@@ -25,46 +24,31 @@ $(document).ready(function(){
             }
         });
     }
-
-    // Вызов сразу после инициализации
     updateDots();
+    $(".owl-carousel").on('changed.owl.carousel', updateDots);
 
-    // Обновляем при смене слайда
-    $(".owl-carousel").on('changed.owl.carousel', function(){
-        updateDots();
-    });
-
-    // Изменение шапки при скролле
-    $(window).scroll(function(){
-        if($(this).scrollTop() > 50){
-            $('#header').addClass('sticky');
-        } else {
+    // Обновление шапки при скролле
+    function updateHeader() {
+        if ($(window).scrollTop() === 0) {
+            // Страница в самом верху
             $('#header').removeClass('sticky');
-        }
-    });
-
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 50) {
-            // Добавляем класс sticky к шапке
-            $('#header').addClass('sticky');
-
-            // Заменяем картинки на "sticky" версии
-            $('.search img').attr('src', '/assets/images/search_sticky.svg');
-            $('.icons_user img').attr('src', '/assets/images/user_sticky.svg');
-            $('.icons_heart img').attr('src', '/assets/images/heart_sticky.svg');
-            $('.icons_cart img').attr('src', '/assets/images/shopping-bag_sticky.svg');
-            $('.icons_global img').attr('src', '/assets/images/global_sticky.svg');
-
-        } else {
-            // Убираем sticky
-            $('#header').removeClass('sticky');
-
-            // Возвращаем исходные картинки
             $('.search img').attr('src', '/assets/images/search.svg');
             $('.icons_user img').attr('src', '/assets/images/user.svg');
             $('.icons_heart img').attr('src', '/assets/images/heart.svg');
             $('.icons_cart img').attr('src', '/assets/images/shopping-bag.svg');
             $('.icons_global img').attr('src', '/assets/images/global.svg');
+        } else {
+            // Любая прокрутка — делаем шапку sticky
+            $('#header').addClass('sticky');
+            $('.search img').attr('src', '/assets/images/search_sticky.svg');
+            $('.icons_user img').attr('src', '/assets/images/user_sticky.svg');
+            $('.icons_heart img').attr('src', '/assets/images/heart_sticky.svg');
+            $('.icons_cart img').attr('src', '/assets/images/shopping-bag_sticky.svg');
+            $('.icons_global img').attr('src', '/assets/images/global_sticky.svg');
         }
-    });
+    }
+
+    // Вызов при загрузке страницы и при скролле
+    updateHeader();
+    $(window).scroll(updateHeader);
 });
