@@ -330,7 +330,7 @@ header.sticky .search i {
 }
 
 .owl-prev, .owl-next {
-    width: 100px;
+    width: 50px;
     height: 100px;
     background: transparent !important;
     display: flex !important;
@@ -421,6 +421,88 @@ header.sticky .search i {
     color: #202020;
     font-size: 15px;
     text-align: center;
+}
+
+.second-slider {
+    height: 60vh; /* высота второго слайдера */
+    width: 100%;
+    position: relative;
+    margin-top: 50px;
+}
+
+.second-slider .owl-carousel .item {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.second-slider .slide-content {
+    max-width: 400px;
+    padding: 0 10px;
+}
+
+.second-slider .btn {
+    margin-top: 15px;
+    display: inline-block;
+    color: #C99F5E;
+    border-radius: 30px;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.secondary-slider {
+    padding: 0 18px;
+}
+
+.secondary-slider .owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 0;
+    margin: 0;
+}
+
+.secondary-slider .slide-content {
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+}
+
+.slide-content-1 h2 {
+    color: #F7F4EF;
+    font-size: 25px;
+    margin: 0;
+}
+
+.slide-content-2 h2 {
+    color: #F7F4EF;
+    font-size: 25px;
+    margin: 0;
+}
+
+.slide-content-3 h2 {
+    color: #F7F4EF;
+    font-size: 25px;
+    margin: 0;
+}
+
+.owl-carousel .item > *:not(.owl-nav) {
+    pointer-events: none; /* остальные элементы не мешают свайпу */
+}
+
+.owl-carousel .item a,
+.owl-carousel .item button {
+    pointer-events: auto; /* кнопки кликабельны */
 }
 
 /* Адаптивка (мобильные устройства) */

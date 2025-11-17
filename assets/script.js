@@ -1,8 +1,9 @@
 $(document).ready(function(){
     // Инициализация Owl Carousel
-    $(".owl-carousel").owlCarousel({
+    $("#slider-1").owlCarousel({
         items: 1,
         loop: true,
+        autoplay: false,
         autoplayTimeout: 5000,
         autoplayHoverPause: true,
         nav: true,
@@ -51,4 +52,25 @@ $(document).ready(function(){
     // Вызов при загрузке страницы и при скролле
     updateHeader();
     $(window).scroll(updateHeader);
+
+    $("#slider-2").owlCarousel({
+        items: 2,              // показываем два слайда одновременно
+        loop: true,
+        margin: 12,            // расстояние между слайдами
+        autoplay: false,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        nav: true,
+        dots: false,
+        smartSpeed: 1000,
+        navText: [
+            '<img src="/assets/images/arrow-circle-left.svg" alt="prev" class="custom-arrow">',
+            '<img src="/assets/images/arrow-circle-right.svg" alt="next" class="custom-arrow">'
+        ],
+        responsive: {
+            0: { items: 1 },
+            768: { items: 2 }
+        }
+    });
+
 });
