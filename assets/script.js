@@ -73,4 +73,25 @@ $(document).ready(function(){
         }
     });
 
+    const burger = document.querySelector('.burger');
+    const sideMenu = document.querySelector('.side-menu');
+    const closeMenu = document.querySelector('.side-menu .close-menu');
+    const overlay = document.querySelector('.overlay');
+
+    // Открытие меню
+    burger.addEventListener('click', () => {
+        sideMenu.classList.add('active');
+        overlay.classList.add('active');
+    });
+
+    // Закрытие меню по кнопке ✕ или клику на фон
+    closeMenu.addEventListener('click', () => {
+        sideMenu.classList.remove('active');
+        overlay.classList.remove('active');
+    });
+
+    overlay.addEventListener('click', () => {
+        sideMenu.classList.remove('active');
+        overlay.classList.remove('active');
+    });
 });

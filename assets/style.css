@@ -885,6 +885,64 @@ header.sticky .search i {
   pointer-events: auto;
 }
 
+/* Меню 30% слева */
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -30%;
+    width: 30%;
+    height: 100vh;
+    background: #F7F4EF;
+    color: #fff;
+    padding: 30px 20px;
+    transition: left 0.3s ease;
+    z-index: 1002;
+}
+
+/* Кнопка закрытия */
+.side-menu .close-menu {
+    font-size: 24px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+/* Активное меню */
+.side-menu.active {
+    left: 0;
+}
+
+/* Список меню */
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-menu li {
+    margin-bottom: 20px;
+}
+
+.side-menu a {
+    color: #202020;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+.overlay.active {
+    display: block;
+}
+
 /* Адаптивка (мобильные устройства) */
 @media(max-width: 1200px){
     .left-menu, .right-menu {
