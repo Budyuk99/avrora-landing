@@ -42,4 +42,12 @@ $(document).ready(function(){
             $('#header').removeClass('sticky');
         }
     });
+
+    $(window).scroll(function(){
+        if($(this).scrollTop() > 50){
+            $('#header').addClass('sticky');
+        } else {
+            $('#header').removeClass('sticky');
+        }
+    });
 });

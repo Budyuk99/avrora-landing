@@ -15,34 +15,69 @@
 <body>
     <!-- Шапка -->
     <header id="header">
-        <a href="#" class="logo">LOGO</a>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+        <div class="header-left">
+            <!-- Бургер меню -->
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Поиск -->
+            <div class="search">
+                <img src="/assets/images/search.svg" alt="search">
+                <input type="text" placeholder="Поиск">
+            </div>
+
+            <!-- Левое меню -->
+            <nav class="left-menu">
+                <a href="#">КАСТОМИЗАЦИЯ</a>
+                <a href="#">КОЛЛЕКЦИИ</a>
+                <a href="#">КОЛЛАБОРАЦИИ</a>
+            </nav>
+        </div>
+
+        <!-- Логотип по центру -->
+        <div class="header-center">
+            <a href="#" class="logo"><img src="/assets/images/logo.svg" alt="logo"></a>
+        </div>
+
+        <div class="header-right">
+            <!-- Правое меню -->
+            <nav class="right-menu">
+                <a href="#">СОТРУДНИЧЕСТВО</a>
+                <a href="#">ФИЛОСОФИЯ</a>
+                <a href="#">КОНТАКТЫ</a>
+            </nav>
+
+            <!-- Иконки -->
+            <div class="icons">
+                <a href="#"><i class="fas fa-user"></i></a>
+                <a href="#"><i class="fas fa-heart"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#"><img src="/assets/images/global.svg" alt="global">RU</a>
+            </div>
+        </div>
     </header>
 
     <!-- Слайдер -->
     <section class="main-slider">
         <div class="owl-carousel owl-theme">
-            <div class="item" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');">
+            <div class="item" style="background-image: url('/assets/images/main_banner_1.svg');">
                 <div class="slide-content">
                     <h2>Mountain Adventure</h2>
                     <p>Explore the breathtaking beauty of mountain landscapes and experience the thrill of adventure.</p>
                     <a href="#" class="btn">Learn More</a>
                 </div>
             </div>
-            <div class="item" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');">
+            <div class="item" style="background-image: url('/assets/images/main_banner_2.svg');">
                 <div class="slide-content">
                     <h2>Tropical Paradise</h2>
                     <p>Relax on pristine beaches and immerse yourself in the crystal clear waters of tropical destinations.</p>
                     <a href="#" class="btn">Discover</a>
                 </div>
             </div>
-            <div class="item" style="background-image: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');">
+            <div class="item" style="background-image: url('/assets/images/main_banner_3.svg');">
                 <div class="slide-content">
                     <h2>Forest Exploration</h2>
                     <p>Discover the mysteries of ancient forests and connect with nature like never before.</p>
