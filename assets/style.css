@@ -586,6 +586,27 @@ header.sticky .search i {
   font-weight: bold;
 } */
 
+.two-images {
+  display: flex;
+  height: 100vh; /* блок на всю высоту экрана */
+  width: 100%;
+}
+
+/* Каждый блок с изображением занимает 50% ширины */
+.two-images .image-block {
+  flex: 1; /* по равной ширине */
+  overflow: hidden;
+  position: relative;
+}
+
+/* Изображение растягивается на весь блок */
+.two-images .image-block img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* сохраняет пропорции и обрезает лишнее */
+  display: block;
+}
+
 /* Адаптивка (мобильные устройства) */
 @media(max-width: 1200px){
     .left-menu, .right-menu {
@@ -596,5 +617,13 @@ header.sticky .search i {
 @media(max-width: 768px){
     .search input {
         width: 100px;
+    }
+
+    .two-images {
+        flex-direction: column; /* изображения друг под другом */
+    }
+
+    .two-images .image-block {
+        height: 50vh; /* каждая картинка половину высоты экрана */
     }
 }
