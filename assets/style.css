@@ -852,6 +852,39 @@ header.sticky .search i {
     text-decoration: none;
 }
 
+.floating-button {
+    position: fixed;
+    bottom: 63px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: #C99F5E;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2000;
+    transition: 0.3s;
+}
+
+.floating-button img {
+    width: 28px;
+    height: 28px;
+}
+
+.floating-button:hover {
+    transform: scale(1.08);
+    background: #b48a52;
+}
+
+.owl-nav {
+  pointer-events: none;
+}
+.owl-nav button {
+  pointer-events: auto;
+}
+
 /* Адаптивка (мобильные устройства) */
 @media(max-width: 1200px){
     .left-menu, .right-menu {
