@@ -590,6 +590,8 @@ header.sticky .search i {
   display: flex;
   height: 100vh; /* блок на всю высоту экрана */
   width: 100%;
+  padding: 21px 33px 0 33px;
+  gap: 18px;
 }
 
 /* Каждый блок с изображением занимает 50% ширины */
@@ -606,6 +608,48 @@ header.sticky .search i {
   object-fit: cover; /* сохраняет пропорции и обрезает лишнее */
   display: block;
 }
+
+.full-image {
+  position: relative;
+  width: 100%;
+  height: max-content; /* на всю высоту экрана */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 18px;
+}
+
+/* Картинка растягивается на весь блок */
+.full-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: none; /* сохраняет пропорции, обрезает лишнее */
+  display: block;
+}
+
+/* Текст поверх картинки (опционально) */
+.full-image .image-text {
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  bottom: 255px;
+}
+
+/* Стили текста */
+.full-image .image-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.full-image .image-text p {
+  font-size: 1.5rem;
+}
+
+.image-text a {
+    font-size: 12px;
+}
+
 
 /* Адаптивка (мобильные устройства) */
 @media(max-width: 1200px){
