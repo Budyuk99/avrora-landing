@@ -26,6 +26,14 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "Calibri";
+    src: url("/assets/fonts/Calibri_Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -45,7 +53,7 @@ header {
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 6px 20px;
+    padding: 20px 20px;
     z-index: 1000;
     transition: 0.2s;
     background: transparent; /* прозрачная шапка */
@@ -89,7 +97,9 @@ header.sticky .logo {
     color: #F7F4EF;
     font-weight: 500;
     transition: 0.2s;
-    font-size: 12px;
+    font-size: 13px;
+    font-family: 'Calibri';
+    letter-spacing: 0.01em;
 }
 
 header.sticky .left-menu a,
@@ -351,8 +361,8 @@ header.sticky .search i {
 }
 
 .logo img {
-    height: 100%;
-    width: 100%;
+    width: 92px;
+    height: 71px;
 }
 
 .header-center {
@@ -363,7 +373,7 @@ header.sticky .search i {
 
 .header-left {margin-right: 77px;}
 
-.left-menu {display: flex;gap: 23px;}
+.left-menu {display: flex;gap: 23px;width: 324px;}
 
 .icons_global {
     display: flex;
@@ -378,6 +388,7 @@ header.sticky .search i {
     display: flex;
     align-items: center;
     gap: 21px;
+    width: 172px;
 }
 
 .sticky .icons_global {
@@ -387,7 +398,8 @@ header.sticky .search i {
 .right-menu {
     display: flex;
     gap: 23px;
-    margin-right: 102px;
+    margin-right: 96px;
+    width: 310px;
 }
 
 .slide-content {
