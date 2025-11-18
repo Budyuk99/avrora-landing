@@ -94,4 +94,62 @@ $(document).ready(function(){
         sideMenu.classList.remove('active');
         overlay.classList.remove('active');
     });
+
+    // ----------- Динамическое меню по полу -----------
+    const menuItems = {
+        women: [
+            "Home chic & cruise",
+            "Вечная классика",
+            "Вечерняя мода",
+            "Милитари роза",
+            "Коллекция бабочки",
+            "Family look",
+            "Подарки",
+            "Аксессуары"
+        ],
+        men: [
+            "Home chic & cruise",
+            "Вечная классика",
+            "Вечерняя мода",
+            "Милитари роза",
+            "Family look",
+            "Подарки",
+            "Аксессуары"
+        ],
+        kids: [
+            "Family look",
+            "Коллекция бабочки",
+            "Home chic & cruise",
+            "Подарки",
+            "Аксессуары"
+        ]
+    };
+
+    const genderLinks = document.querySelectorAll('.gender-link');
+    const sideMenuList = document.querySelector('.side-menu-list');
+
+    // Функция обновления списка
+    function renderMenu(gender) {
+        sideMenuList.innerHTML = "";
+        menuItems[gender].forEach(item => {
+            const li = document.createElement('li');
+            li.textContent = item;
+            sideMenuList.appendChild(li);
+        });
+    }
+
+    // Инициализация: Женщинам
+    renderMenu("women");
+
+    // Клики по кнопкам
+    genderLinks.forEach(btn => {
+        btn.addEventListener('click', () => {
+            genderLinks.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            const gender = btn.dataset.gender;
+            renderMenu(gender);
+        });
+    });
+
 });

@@ -233,12 +233,29 @@
 
     <!-- Сайд-меню -->
     <div class="side-menu">
-        <div class="close-menu">✕</div>
-        <ul>
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">Каталог</a></li>
-            <li><a href="#">Контакты</a></li>
-        </ul>
+        <div class="side-menu_block">
+            <div class="close-menu">✕</div>
+
+            <!-- Выбор категории -->
+            <div class="gender-switch">
+                <a href="#" class="gender-link active" data-gender="women">Женщинам</a>
+                <a href="#" class="gender-link" data-gender="men">Мужчинам</a>
+                <a href="#" class="gender-link" data-gender="kids">Детям</a>
+            </div>
+        </div>
+        <!-- Динамическое меню -->
+        <ul class="side-menu-list"></ul>
+
+        <div class="side-menu_footer">
+            <p>Город: <a href="#">Санкт-Петербург</a></p>
+            <div class="side-menu_footer-contacts">
+                <p>Контакты</p>
+                <div class="side-menu_footer-contacts-img">
+                    <img src="/assets/images/telegram-side-menu.svg" alt="telegram">
+                    <img src="/assets/images/whatsapp-side-menu.svg" alt="whatsapp">
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="overlay"></div>

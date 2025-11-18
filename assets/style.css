@@ -889,12 +889,12 @@ header.sticky .search i {
 .side-menu {
     position: fixed;
     top: 0;
-    left: -30%;
-    width: 30%;
+    left: -31%;
+    width: 360px;
     height: 100vh;
     background: #F7F4EF;
     color: #fff;
-    padding: 30px 20px;
+    padding: 39px 20px 0 20px;
     transition: left 0.3s ease;
     z-index: 1002;
 }
@@ -903,7 +903,7 @@ header.sticky .search i {
 .side-menu .close-menu {
     font-size: 24px;
     cursor: pointer;
-    margin-bottom: 20px;
+    color: #202020;
 }
 
 /* Активное меню */
@@ -916,16 +916,25 @@ header.sticky .search i {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+    /* margin-bottom: 194px; */
 }
 
 .side-menu li {
-    margin-bottom: 20px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    color: #202020;
+    font-size: 14px;
 }
 
 .side-menu a {
     color: #202020;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 400;
 }
 
 .overlay {
@@ -941,6 +950,53 @@ header.sticky .search i {
 
 .overlay.active {
     display: block;
+}
+
+.side-menu_block {
+    display: flex;
+    gap: 19px;
+    margin-bottom: 52px;
+}
+
+.gender-switch {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.gender-link.active {
+    text-decoration: underline;
+}
+
+.side-menu_footer {
+    display: flex;
+    flex-direction: column;
+    color: #202020;
+    text-transform: uppercase;
+    font-size: 14px;
+    gap: 20px;
+    position: absolute;
+    bottom: 125px;
+}
+
+.side-menu_footer-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.side-menu_footer-contacts-img {
+    display: flex;
+    gap: 10px;
+}
+
+.side-menu_footer a {
+    color: #D7B46A;
+    text-decoration: underline;
+}
+
+.side-menu_footer p {
+    font-size: 12px;
 }
 
 /* Адаптивка (мобильные устройства) */
