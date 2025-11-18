@@ -80,7 +80,7 @@ header.sticky {
     font-size: 24px;
     font-weight: bold;
     text-decoration: none;
-    color: #fff;
+    color: #F7F4EF;
     transition: 0.2s;
     height: 70px;
     width: 90px;
@@ -109,10 +109,11 @@ header.sticky .right-menu a {
 
 /* Иконки */
 .icons a {
-    color: #fff;
+    color: #F7F4EF;
     font-size: 14px;
     transition: 0.2s;
     font-weight: 100;
+    height: 100%;
 }
 
 header.sticky .icons a {
@@ -128,12 +129,13 @@ header.sticky .icons a {
     height: 12px;
     cursor: pointer;
     margin: 19px 29px 19px 19px;
+    opacity: 70%;
 }
 
 .burger span {
     display: block;
     height: 1px;
-    background: #fff;
+    background: #F7F4EF;
     transition: 0.2s;
 }
 
@@ -149,6 +151,7 @@ header.sticky .burger span {
     gap: 8px;
     width: 114px;
     margin-right: 71px;
+    opacity: 70%;
 }
 
 .search input {
@@ -191,7 +194,7 @@ header.sticky .search {
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
-    color: #fff;
+    color: #F7F4EF;
 }
 
 header.sticky .search i {
@@ -212,7 +215,7 @@ header.sticky .search i {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: #F7F4EF;
     text-align: center;
 }
 
@@ -314,7 +317,7 @@ header.sticky .search i {
 }
 
 .owl-dot.active span {
-    background: #fff !important;
+    background: #F7F4EF !important;
     height: 2px;
 }
 
@@ -350,7 +353,7 @@ header.sticky .search i {
 
 .owl-prev svg,
 .owl-next svg {
-    stroke: #fff;          /* ← цвет стрелок */
+    stroke: #F7F4EF;          /* ← цвет стрелок */
     stroke-width: 1;       /* ← толщина стрелки */
 }
 
@@ -389,6 +392,8 @@ header.sticky .search i {
     align-items: center;
     gap: 21px;
     width: 172px;
+    justify-content: center;
+    height: 19px;
 }
 
 .sticky .icons_global {
@@ -443,7 +448,7 @@ header.sticky .search i {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: #F7F4EF;
     text-align: center;
 }
 
@@ -522,7 +527,7 @@ header.sticky .search i {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #fff;
+  color: #F7F4EF;
   overflow: hidden;
   margin-top: 15px;
 }
@@ -602,7 +607,7 @@ header.sticky .search i {
 /* Текст поверх картинки (опционально) */
 .full-image .image-text {
   text-align: center;
-  color: #fff;
+  color: #F7F4EF;
   position: absolute;
   bottom: 255px;
 }
@@ -628,7 +633,7 @@ header.sticky .search i {
   background-size: cover; /* картинка покрывает весь экран */
   background-position: center;
   background-repeat: no-repeat;
-  color: #fff;
+  color: #F7F4EF;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -636,7 +641,7 @@ header.sticky .search i {
    /* отступы от краёв */
   margin-top: 18px;
   align-items: center;
-  padding: 300px 60px;
+  padding: 0 60px;
   gap: 243px;
 }
 
@@ -667,6 +672,7 @@ header.sticky .search i {
     font-size: 100px;
     font-weight: 100;
     text-transform: uppercase;
+    letter-spacing: 0.01em;
 }
 
 .banner-top_block {
@@ -681,6 +687,7 @@ header.sticky .search i {
     width: 181px;
     text-transform: uppercase;
     text-align: left;
+    font-family: 'Calibri';
 }
 
 .banner-top_block_second {
@@ -688,6 +695,7 @@ header.sticky .search i {
     width: 181px;
     text-transform: uppercase;
     text-align: right;
+    font-family: 'Calibri';
 }
 
 .banner-link_first {
@@ -900,7 +908,7 @@ header.sticky .search i {
     width: 360px;
     height: 100vh;
     background: #F7F4EF;
-    color: #fff;
+    color: #F7F4EF;
     padding: 39px 20px 0 20px;
     transition: left 0.3s ease;
     z-index: 1002;
@@ -1022,6 +1030,17 @@ header.sticky .search i {
 
 .two-images_text-second {
     font-size: 25px;
+}
+
+.icons img {
+    height: 100%;
+}
+
+.ru {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Адаптивка (мобильные устройства) */
