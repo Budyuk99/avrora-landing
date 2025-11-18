@@ -999,6 +999,24 @@ header.sticky .search i {
     font-size: 12px;
 }
 
+.two-images_text {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    color: #F7F4EF;
+    top: 91px;
+    left: 26px;
+}
+
+.two-images_text-first {
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.two-images_text-second {
+    font-size: 25px;
+}
+
 /* Адаптивка (мобильные устройства) */
 @media(max-width: 1200px){
     .left-menu, .right-menu {
