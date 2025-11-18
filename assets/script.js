@@ -152,4 +152,17 @@ $(document).ready(function(){
         });
     });
 
+$(window).on('scroll resize', function() {
+    const $btn = $('.floating-button');
+    const $footer = $('footer');
+
+    const scrollBottom = $(window).scrollTop() + $(window).height();
+    const footerTop = $footer.offset().top;
+
+    if(scrollBottom >= footerTop) {
+        $btn.addClass('hidden'); // плавно скрываем
+    } else {
+        $btn.removeClass('hidden'); // плавно показываем
+    }
+});
 });

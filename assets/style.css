@@ -892,7 +892,9 @@ header.sticky .search i {
     justify-content: center;
     cursor: pointer;
     z-index: 2000;
-    transition: 0.3s;
+    transition: 0.2s ease, opacity 0.5s ease;
+    opacity: 1;
+    visibility: visible;
 }
 
 .floating-button img {
@@ -903,6 +905,11 @@ header.sticky .search i {
 .floating-button:hover {
     transform: scale(1.08);
     background: #b48a52;
+}
+
+.floating-button.hidden {
+    opacity: 0;
+    visibility: hidden;
 }
 
 .owl-nav {
