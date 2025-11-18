@@ -44,13 +44,13 @@ header {
     left: 0;
     width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 6px 16px;
+    padding: 6px 20px;
     z-index: 1000;
     transition: 0.2s;
     background: transparent; /* прозрачная шапка */
     height: 80px;
+    width: 100%;
 }
 
 /* Белая шапка при скролле */
@@ -65,7 +65,6 @@ header.sticky {
     display: flex;
     align-items: center;
     height: 100%;
-    flex-basis: 40%;
 }
 
 /* Логотип */
@@ -86,7 +85,6 @@ header.sticky .logo {
 /* Меню */
 .left-menu a,
 .right-menu a {
-    margin: 0 10px;
     text-decoration: none;
     color: #F7F4EF;
     font-weight: 500;
@@ -119,7 +117,7 @@ header.sticky .icons a {
     width: 20px;
     height: 12px;
     cursor: pointer;
-    margin: 19px;
+    margin: 19px 29px 19px 19px;
 }
 
 .burger span {
@@ -139,7 +137,8 @@ header.sticky .burger span {
     display: flex;
     border-bottom: 1px solid #F7F4EF;
     gap: 8px;
-    width: 110px;
+    width: 114px;
+    margin-right: 71px;
 }
 
 .search input {
@@ -357,33 +356,28 @@ header.sticky .search i {
 }
 
 .header-center {
-    flex-basis: 20%;
     justify-content: center;
 }
 
-.header-right {
-    justify-content: space-between;
-}
+.header-right {margin-left: 77px;}
 
-.header-left {
-    justify-content: space-between;
-}
+.header-left {margin-right: 77px;}
 
-.left-menu {display: flex;gap: 20px;}
+.left-menu {display: flex;gap: 23px;}
 
 .icons_global {
     display: flex;
     flex-direction: row;
     justify-content: end;
     align-items: center;
-    gap: 7px;
+    gap: 5px;
     text-decoration: none;
 }
 
 .icons {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 21px;
 }
 
 .sticky .icons_global {
@@ -392,7 +386,8 @@ header.sticky .search i {
 
 .right-menu {
     display: flex;
-    gap: 20px;
+    gap: 23px;
+    margin-right: 102px;
 }
 
 .slide-content {
