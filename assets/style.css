@@ -59,6 +59,7 @@ header {
     background: transparent; /* прозрачная шапка */
     height: 80px;
     width: 100%;
+    justify-content: center;
 }
 
 /* Белая шапка при скролле */
