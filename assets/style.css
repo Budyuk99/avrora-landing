@@ -1332,6 +1332,12 @@ header {
 }
 
 /* Адаптивка (мобильные устройства) */
+@media(max-height: 800px){
+    .side-menu_footer {
+        bottom: 10px;
+    }
+}
+
 @media(min-width: 1441px){
     .footer-bottom {
         gap: 0;
