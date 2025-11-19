@@ -779,6 +779,7 @@ header.sticky .search i {
 /* Левая часть (форма) */
 .footer-left {
   width: 355px;
+  margin-right: 235px;
 }
 
 .subscribe-form div {
@@ -802,6 +803,9 @@ header.sticky .search i {
   height: 33px;
   background: #C99F5E;
   color: #F7F4EF;
+  font-size: 12px;
+  line-height: 13px;
+  letter-spacing: 0.02em;
 }
 
 .subscribe-form input[type="email"]::placeholder {
@@ -818,6 +822,9 @@ header.sticky .search i {
   height: 33px;
   padding: 6px 37px;
   width: 142px;
+  font-size: 12px;
+  line-height: 13px;
+  letter-spacing: 0.02em;
 }
 
 .subscribe-form button:hover {
@@ -836,9 +843,9 @@ header.sticky .search i {
 
 /* Правая часть */
 .footer-right {
-  flex-basis: 55%;
   display: flex;
   flex-direction: row;
+  flex: 1;
 }
 
 .footer-column a {
@@ -851,6 +858,7 @@ header.sticky .search i {
   text-transform: uppercase;
   font-size: 14px;
   font-family: 'Calibri';
+  line-height: 100%;
 }
 
 .footer-column a:hover {
@@ -862,6 +870,8 @@ header.sticky .search i {
   width: 115px;
   height: 117px;
   opacity: 0.9;
+  position: relative;
+  top: -26px;
 }
 
 .subscribe-form .checkbox {
@@ -878,6 +888,8 @@ header.sticky .search i {
 
 .checkbox p {
     font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
 }
 
 .footer-column p {
@@ -891,8 +903,8 @@ header.sticky .search i {
 
 .footer-bottom {
     display: flex;
-    justify-content: space-between;
     flex: 1;
+    gap: 878px;
 }
 
 .footer-botto_first {
@@ -920,6 +932,9 @@ header.sticky .search i {
     color: #202020;
     text-decoration: none;
     font-family: 'Calibri';
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0.02em;
 }
 
 .floating-button {
@@ -1197,6 +1212,52 @@ header {
 .footer-right .footer-column-second {
     margin-right: 249px;
     width: 133px;
+}
+
+.footer_left-and-right {
+    display: flex;
+    width: 100%;
+}
+
+.checkbox-policy {
+    appearance: none;
+    -webkit-appearance: none;
+
+    width: 38px;
+    height: 14px;
+    border: 1px solid #C99F5E;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    margin: 4px 0 0 0;
+    transition: 0.2s;
+}
+
+/* Активный чекбокс */
+.checkbox-policy:checked {
+    border-color: #C99F5E;
+    background-color: transparent;
+}
+
+/* Галочка */
+.checkbox-policy:checked::after {
+    content: "";
+    position: absolute;
+
+    /* Размер галочки */
+    width: 6px;
+    height: 10px;
+
+    /* Формируем углы */
+    border: solid #C99F5E;
+    border-width: 0 2px 2px 0;
+
+    /* Поворот */
+    transform: translate(-50%, -50%) rotate(45deg);
+
+    /* Центрирование внутри длинного прямоугольника */
+    top: 40%;
+    left: 50%;
 }
 
 /* Адаптивка (мобильные устройства) */
