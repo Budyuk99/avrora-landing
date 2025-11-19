@@ -133,23 +133,31 @@ $(document).ready(function(){
     // Функция обновления списка с ссылками
 function renderMenu(gender) {
     sideMenuList.innerHTML = ""; // очищаем меню
+
     menuItems[gender].forEach(item => {
         const li = document.createElement('li');
 
-        // создаём ссылку
+        // создаём ссылку, которая занимает всю область li
         const a = document.createElement('a');
-        a.textContent = item;
         a.href = "#";
         a.classList.add("side-menu-link");
 
-        // создаём стрелку
+        // текст пункта
+        const span = document.createElement('span');
+        span.classList.add('side-menu-text');
+        span.textContent = item;
+
+        // стрелка
         const arrow = document.createElement('img');
         arrow.src = '/assets/images/arrow_right.svg';
         arrow.alt = 'arrow';
         arrow.classList.add('side-menu-arrow');
 
-        li.appendChild(a); // вставляем ссылку в li
-        li.appendChild(arrow); // вставляем стрелку в li
+        // собираем
+        a.appendChild(span);
+        a.appendChild(arrow);
+        li.appendChild(a);
+
         sideMenuList.appendChild(li);
     });
 }

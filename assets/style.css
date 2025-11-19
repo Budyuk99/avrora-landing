@@ -1024,8 +1024,7 @@ header.sticky .search i {
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 33px;
-    /* margin-bottom: 194px; */
+    gap: 15px;
 }
 
 .side-menu li a {
@@ -1055,6 +1054,11 @@ header.sticky .search i {
     display: inline-block;
 }
 
+.side-menu-list li {
+    padding: 7px 0 7px 7px;
+    border-radius: 4px;
+}
+
 .side-menu-arrow {
     float: right;
     width: 16px;
@@ -1068,7 +1072,6 @@ header.sticky .search i {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.5);
     z-index: 1000;
 }
 
@@ -1100,7 +1103,7 @@ header.sticky .search i {
     font-size: 14px;
     gap: 20px;
     position: absolute;
-    bottom: 125px;
+    bottom: 64px;
 }
 
 .side-menu_footer-contacts {
@@ -1363,6 +1366,37 @@ header {
     flex-direction: column;
     align-items: center;
 }
+
+.side-menu-list li {
+    padding: 0;
+    margin: 0;
+}
+
+.side-menu-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;         /* ссылка занимает всю ширину */
+    padding: 12px 7px;
+    text-decoration: none;
+    color: #202020;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: "Calibri";
+    letter-spacing: 0.03em;
+    border-radius: 4px;
+}
+
+.side-menu-link:hover {
+    background: rgba(0,0,0,0.05);
+}
+
+.side-menu-arrow {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;     /* стрелка не сжимается */
+}
+
 
 /* Адаптивка (мобильные устройства) */
 @media(max-height: 800px){
