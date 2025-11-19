@@ -3,7 +3,7 @@ $(document).ready(function(){
     $("#slider-1").owlCarousel({
         items: 1,
         loop: true,
-        autoplay: false,
+        autoplay: true,
         autoplayTimeout: 5000,
         autoplayHoverPause: true,
         nav: true,
@@ -57,7 +57,7 @@ $(document).ready(function(){
         items: 2,              // показываем два слайда одновременно
         loop: true,
         margin: 12,            // расстояние между слайдами
-        autoplay: false,
+        autoplay: true,
         autoplayTimeout: 5000,
         autoplayHoverPause: true,
         nav: true,
@@ -154,17 +154,35 @@ $(document).ready(function(){
         });
     });
 
-$(window).on('scroll resize', function() {
-    const $btn = $('.floating-button');
-    const $footer = $('footer');
+    $(window).on('scroll resize', function() {
+        const $btn = $('.floating-button');
+        const $footer = $('footer');
 
-    const scrollBottom = $(window).scrollTop() + $(window).height();
-    const footerTop = $footer.offset().top;
+        const scrollBottom = $(window).scrollTop() + $(window).height();
+        const footerTop = $footer.offset().top;
 
-    if(scrollBottom >= footerTop) {
-        $btn.addClass('hidden'); // плавно скрываем
-    } else {
-        $btn.removeClass('hidden'); // плавно показываем
-    }
-});
+        if(scrollBottom >= footerTop) {
+            $btn.addClass('hidden'); // плавно скрываем
+        } else {
+            $btn.removeClass('hidden'); // плавно показываем
+        }
+    });
+
+    $("#two-images-carousel").owlCarousel({
+        items: 2,             // показываем по 2 слайда на экране
+        loop: true,
+        margin: 18,
+        nav: false,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        smartSpeed: 800,
+        responsive: {
+            0: { items: 1 },
+            768: { items: 2 },
+            1441: { items: 3 },
+            1920: { items: 4 }
+        }
+    });
 });
