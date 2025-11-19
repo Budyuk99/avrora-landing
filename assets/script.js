@@ -207,4 +207,70 @@ function renderMenu(gender) {
             1920: { items: 4 }
         }
     });
+
+    const subMenuItems = {
+        "Милитари роза": ["Платья", "Юбки", "Брюки", "Костюмы"],
+    };
+
+    const subMenu = document.querySelector(".sub-menu");
+    const subMenuList = document.querySelector(".sub-menu-list");
+    const subMenuTitle = document.querySelector(".sub-menu-title");
+
+    let hideTimeout = null;
+
+    function openSubMenu(category) {
+        subMenuTitle.textContent = category;
+        subMenuList.innerHTML = "";
+
+        const list = subMenuItems[category];
+
+        if (!list) {
+            hideSubMenu();
+            return;
+        }
+        
+        list.forEach(item => {
+            const li = document.createElement("li");
+            const a = document.createElement("a");
+            a.href = "#";
+            a.classList.add("side-menu-link");
+            a.textContent = item;
+            li.appendChild(a);
+            subMenuList.appendChild(li);
+        });
+
+        subMenu.classList.add("visible");
+    }
+
+    function hideSubMenu() {
+        subMenu.classList.remove("visible");
+    }
+
+    sideMenuList.addEventListener("mouseover", (e) => {
+        const link = e.target.closest(".side-menu-link");
+        if (!link) return;
+
+        clearTimeout(hideTimeout);
+
+        const category = link.textContent.trim();
+
+        if (subMenuItems[category]) {
+            openSubMenu(category);
+        } else {
+            hideSubMenu();
+        }
+    });
+
+    sideMenu.addEventListener("mouseleave", () => {
+        hideTimeout = setTimeout(hideSubMenu, 200);
+    });
+
+    subMenu.addEventListener("mouseleave", () => {
+        hideTimeout = setTimeout(hideSubMenu, 200);
+    });
+
+    subMenu.addEventListener("mouseenter", () => {
+        clearTimeout(hideTimeout);
+    });
+
 });
