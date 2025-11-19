@@ -183,6 +183,10 @@ header.sticky .burger span {
 .search input::placeholder {
     color: #F7F4EF;
     font-weight: 100;
+    font-family: "Calibri";
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: -0.01em;
 }
 
 header.sticky .search input {
@@ -1028,16 +1032,24 @@ header.sticky .search i {
     margin-bottom: 0;
     text-transform: uppercase;
     color: #202020;
-    font-size: 14px;
+    font-size: 16px;
+    font-family: "Calibri";
+    line-height: 100%;
+    letter-spacing: 0.03em;
 }
 
 .side-menu a {
     color: #202020;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 13px;
     text-transform: uppercase;
     font-weight: 400;
+    font-family: "Calibri";
+    line-height: 21px;
+    letter-spacing: 0.03em;
 }
+
+a.gender-link.active {}
 
 .overlay {
     display: none;
@@ -1095,10 +1107,17 @@ header.sticky .search i {
 .side-menu_footer a {
     color: #D7B46A;
     text-decoration: underline;
+    font-size: 16px;
+    font-family: "Calibri";
+    line-height: 100%;
+    letter-spacing: 0.02em;
 }
 
 .side-menu_footer p {
-    font-size: 12px;
+    font-size: 16px;
+    font-family: "Calibri";
+    line-height: 100%;
+    letter-spacing: 0.02em;
 }
 
 .two-images_text {
@@ -1135,6 +1154,10 @@ header.sticky .search i {
     height: 100%;
     align-items: center;
     justify-content: center;
+    font-family: "Calibri";
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0.01em;
 }
 
 .subscribe-form label,
