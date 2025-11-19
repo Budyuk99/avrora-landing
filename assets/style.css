@@ -443,7 +443,9 @@ header.sticky .search i {
     justify-content: center;
     align-items: center;
     gap: 15px;
-    width: 622px;
+    max-width: 622px; /* Фиксируем максимальную ширину блока */
+    margin: 130px auto; /* Центрируем по горизонтали */
+    text-align: center; /* Центрируем текст внутри */
 }
 
 .text_first h2 {
@@ -1261,6 +1263,21 @@ header {
 }
 
 /* Адаптивка (мобильные устройства) */
+@media(min-width: 1441px){
+    .footer-bottom {
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .footer-right {
+        gap: 10%;
+    }
+
+    .footer-right .footer-column-first {
+        margin-right: auto;
+    }
+}
+
 @media(max-width: 1200px){
     .left-menu, .right-menu {
         display: none;
