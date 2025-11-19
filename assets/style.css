@@ -1049,7 +1049,17 @@ header.sticky .search i {
     letter-spacing: 0.03em;
 }
 
-a.gender-link.active {}
+.side-menu-list li a {
+    position: relative; /* чтобы стрелка была внутри ссылки */
+    padding-right: 25px; /* оставляем место для стрелки */
+    display: inline-block;
+}
+
+.side-menu-arrow {
+    float: right;
+    width: 16px;
+    height: 16px;
+}
 
 .overlay {
     display: none;

@@ -131,21 +131,31 @@ $(document).ready(function(){
     const sideMenuList = document.querySelector('.side-menu-list');
 
     // Функция обновления списка с ссылками
-    function renderMenu(gender) {
-        sideMenuList.innerHTML = ""; // очищаем меню
-        menuItems[gender].forEach(item => {
-            const li = document.createElement('li');
+function renderMenu(gender) {
+    sideMenuList.innerHTML = ""; // очищаем меню
+    menuItems[gender].forEach(item => {
+        const li = document.createElement('li');
 
-            // создаём ссылку
-            const a = document.createElement('a');
-            a.textContent = item;
-            a.href = "#";
-            a.classList.add("side-menu-link"); // для стилизации, если нужно
+        // создаём основную ссылку
+        const a = document.createElement('a');
+        a.textContent = item;
+        a.href = "#"; // ссылка на сам пункт
+        a.classList.add("side-menu-link");
 
-            li.appendChild(a); // вставляем ссылку в li
-            sideMenuList.appendChild(li);
-        });
-    }
+        // создаём отдельную ссылку-стрелку
+        const arrowLink = document.createElement('a');
+        arrowLink.href = "#"; // ссылка для стрелки
+        arrowLink.classList.add('side-menu-arrow');
+        const arrowImg = document.createElement('img');
+        arrowImg.src = '/assets/images/arrow_right.svg';
+        arrowImg.alt = 'arrow';
+        arrowLink.appendChild(arrowImg);
+
+        li.appendChild(a);        // вставляем текст
+        li.appendChild(arrowLink); // вставляем стрелку
+        sideMenuList.appendChild(li);
+    });
+}
 
     // Инициализация: Женщинам
     renderMenu("women");
