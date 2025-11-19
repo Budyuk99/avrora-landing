@@ -437,12 +437,13 @@ header.sticky .search i {
 }
 
 .text_first {
-    padding: 130px 409px;
+    margin: 130px 409px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 15px;
+    width: 622px;
 }
 
 .text_first h2 {
@@ -458,6 +459,8 @@ header.sticky .search i {
     font-size: 17px;
     text-align: center;
     font-family: 'Calibri';
+    line-height: 24px;
+    letter-spacing: 0.02em;
 }
 
 .second-slider {
@@ -579,16 +582,19 @@ header.sticky .search i {
 
 /* Стили текста */
 .full-banner .banner-content h2 {
-  font-size: 25px;
+  font-size: 27px;
   margin-bottom: 15px;
   text-transform: uppercase;
+  line-height: 23px;
+  letter-spacing: 0.03em;
 }
 
 .full-banner .banner-content p {
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 15px;
   text-transform: uppercase;
   font-family: 'Calibri';
+  line-height: 23px;
 }
 
 .two-images {
@@ -1101,6 +1107,72 @@ header.sticky .search i {
 
 .subscribe-form label {
     text-transform: uppercase;
+    font-size: 14px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px 20px;
+    z-index: 1000;
+    transition: 0.2s;
+    background: transparent;
+    height: 80px;
+    justify-content: space-between; /* меняем на space-between */
+}
+
+.header-left, .header-center, .header-right {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+/* Убираем фиксированные margin и делаем flex распределение */
+.header-left {
+    justify-content: flex-start;
+    flex: 1;
+}
+
+.header-center {
+    justify-content: center;
+    flex: 0 0 auto;
+}
+
+.header-right {
+    justify-content: flex-end;
+    flex: 1;
+}
+
+/* Обновляем внутренние отступы для адаптивности */
+.burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20px;
+    height: 12px;
+    cursor: pointer;
+    margin: 19px 29px 19px 19px;
+    opacity: 70%;
+}
+
+.search {
+    position: relative;
+    display: flex;
+    border-bottom: 1px solid #F7F4EF;
+    gap: 8px;
+    width: 114px;
+    margin-right: 71px;
+    opacity: 70%;
+}
+
+.left-menu {
+    display: flex;
+    gap: 23px;
+    width: 324px;
 }
 
 /* Адаптивка (мобильные устройства) */
