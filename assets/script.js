@@ -69,7 +69,9 @@ $(document).ready(function(){
         ],
         responsive: {
             0: { items: 1 },
-            768: { items: 2 }
+            768: { items: 2 },
+            1441: { items: 3 },
+            1920: { items: 4 }
         }
     });
 
