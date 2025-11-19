@@ -136,23 +136,20 @@ function renderMenu(gender) {
     menuItems[gender].forEach(item => {
         const li = document.createElement('li');
 
-        // создаём основную ссылку
+        // создаём ссылку
         const a = document.createElement('a');
         a.textContent = item;
-        a.href = "#"; // ссылка на сам пункт
+        a.href = "#";
         a.classList.add("side-menu-link");
 
-        // создаём отдельную ссылку-стрелку
-        const arrowLink = document.createElement('a');
-        arrowLink.href = "#"; // ссылка для стрелки
-        arrowLink.classList.add('side-menu-arrow');
-        const arrowImg = document.createElement('img');
-        arrowImg.src = '/assets/images/arrow_right.svg';
-        arrowImg.alt = 'arrow';
-        arrowLink.appendChild(arrowImg);
+        // создаём стрелку
+        const arrow = document.createElement('img');
+        arrow.src = '/assets/images/arrow_right.svg';
+        arrow.alt = 'arrow';
+        arrow.classList.add('side-menu-arrow');
 
-        li.appendChild(a);        // вставляем текст
-        li.appendChild(arrowLink); // вставляем стрелку
+        li.appendChild(a); // вставляем ссылку в li
+        li.appendChild(arrow); // вставляем стрелку в li
         sideMenuList.appendChild(li);
     });
 }
