@@ -3,7 +3,7 @@ $(document).ready(function(){
     $("#slider-1").owlCarousel({
         items: 1,
         loop: true,
-        autoplay: false,
+        autoplay: true,
         autoplayTimeout: 5000,
         autoplayHoverPause: true,
         nav: true,
@@ -100,11 +100,11 @@ $(document).ready(function(){
     // ----------- Динамическое меню по полу -----------
     const menuItems = {
         women: [
+            "Все модели",
+            "Новинки",
             "Home chic & cruise",
             "Вечная классика",
             "Вечерняя мода",
-            "Милитари роза",
-            "Коллекция бабочки",
             "Family look",
             "Подарки",
             "Аксессуары"
@@ -209,7 +209,7 @@ function renderMenu(gender) {
     });
 
     const subMenuItems = {
-        "Милитари роза": ["Платья", "Юбки", "Брюки", "Костюмы"],
+        "Вечная классика": ["Блузки", "Брюки", "Шорты", "Платья", "Комплекты", "Халаты", "Комбинезоны", "Подарки", "Аксессуары"],
     };
 
     const subMenu = document.querySelector(".sub-menu");
