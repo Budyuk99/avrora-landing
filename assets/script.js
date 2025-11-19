@@ -130,12 +130,19 @@ $(document).ready(function(){
     const genderLinks = document.querySelectorAll('.gender-link');
     const sideMenuList = document.querySelector('.side-menu-list');
 
-    // Функция обновления списка
+    // Функция обновления списка с ссылками
     function renderMenu(gender) {
-        sideMenuList.innerHTML = "";
+        sideMenuList.innerHTML = ""; // очищаем меню
         menuItems[gender].forEach(item => {
             const li = document.createElement('li');
-            li.textContent = item;
+
+            // создаём ссылку
+            const a = document.createElement('a');
+            a.textContent = item;
+            a.href = "#";
+            a.classList.add("side-menu-link"); // для стилизации, если нужно
+
+            li.appendChild(a); // вставляем ссылку в li
             sideMenuList.appendChild(li);
         });
     }

@@ -1028,7 +1028,7 @@ header.sticky .search i {
     /* margin-bottom: 194px; */
 }
 
-.side-menu li {
+.side-menu li a {
     margin-bottom: 0;
     text-transform: uppercase;
     color: #202020;
