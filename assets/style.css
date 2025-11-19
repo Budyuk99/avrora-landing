@@ -1418,6 +1418,10 @@ header {
     pointer-events: auto; /* включает клики, когда меню видно */
 }
 
+.sub-menu-list {
+    padding-top: 48px !important;
+}
+
 /* Адаптивка (мобильные устройства) */
 @media(max-height: 800px){
     .side-menu_footer {
