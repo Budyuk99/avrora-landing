@@ -839,7 +839,6 @@ header.sticky .search i {
   flex-basis: 55%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
 }
 
 .footer-column a {
@@ -860,7 +859,8 @@ header.sticky .search i {
 
 /* Логотип */
 .footer-logo img {
-  width: 150px;
+  width: 115px;
+  height: 117px;
   opacity: 0.9;
 }
 
@@ -1185,6 +1185,16 @@ header {
     display: flex;
     gap: 23px;
     width: 324px;
+}
+
+.footer-right .footer-column-first {
+    margin-right: 176px;
+    width: 133px;
+}
+
+.footer-right .footer-column-second {
+    margin-right: 249px;
+    width: 133px;
 }
 
 /* Адаптивка (мобильные устройства) */
