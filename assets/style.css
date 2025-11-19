@@ -20,9 +20,9 @@
 }
 
 @font-face {
-    font-family: 'Didot';
+    font-family: 'Didot-Title';
     src: url('/assets/fonts/Didot/Didot_Title.otf') format('opentype');
-    font-weight: 900; /* или 800, зависит от файла */
+    font-weight: 400; /* или 800, зависит от файла */
     font-style: normal;
 }
 
@@ -32,6 +32,21 @@
     font-weight: 400;
     font-style: normal;
     font-display: swap;
+}
+
+@font-face {
+    font-family: "Calibri";
+    src: url("/assets/fonts/Calibri_Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Calibri";
+    src: url("/assets/fonts/Calibri_Light.ttf") format("truetype");
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal
 }
 
 * {
@@ -245,9 +260,12 @@ header.sticky .search i {
 }
 
 .slide-content-2 p {
-    font-size: 19px;
+    font-size: 18px;
     text-transform: uppercase;
     margin-bottom: 11px;
+    font-family: "Calibri", sans-serif;
+    line-height: 23px;
+    letter-spacing: 0.04em;
 }
 
 .slide-content-2 h2 {
@@ -263,17 +281,21 @@ header.sticky .search i {
 .slide-content-4 h2 {
     color: #F6EFE5;
     font-size: 25px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
 }
 
 .btn {
     display: inline-block;
     color: #C99F5E;
     border-radius: 30px;
-    font-weight: 100;
+    font-weight: 400;
     transition: 0.2s;
     text-transform: uppercase;
-    letter-spacing: 1px;
     font-family: 'Calibri';
+    font-size: 17px;
+    line-height: 23px;
+    letter-spacing: 0.01em;
 }
 
 /* Стили для навигации слайдера - ТОНКИЕ СТРЕЛКИ */
@@ -511,6 +533,8 @@ header.sticky .search i {
     font-size: 25px;
     margin: 0;
     margin-bottom: 11px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
 }
 
 .slide-content-3 h2 {
@@ -677,7 +701,7 @@ header.sticky .search i {
     font-size: 100px;
     text-transform: uppercase;
     letter-spacing: 0.01em;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
 }
 
@@ -737,7 +761,7 @@ header.sticky .search i {
 
 /* Левая часть (форма) */
 .footer-left {
-  flex-basis: 25%;
+  width: 355px;
 }
 
 .subscribe-form div {
@@ -754,7 +778,6 @@ header.sticky .search i {
 }
 
 .subscribe-form input[type="email"] {
-  flex: 1;
   padding: 6px 12px;
   border: none;
   border-radius: 6px;
@@ -775,9 +798,9 @@ header.sticky .search i {
   border-radius: 6px;
   cursor: pointer;
   transition: 0.3s;
-  width: 142px;
   height: 33px;
-  padding: 6px 12px;
+  padding: 6px 37px;
+  width: 142px;
 }
 
 .subscribe-form button:hover {
@@ -1047,10 +1070,16 @@ header.sticky .search i {
     font-size: 13px;
     text-transform: uppercase;
     font-family: 'Calibri';
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    line-height: 100%;
 }
 
 .two-images_text-second {
     font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    font-weight: 700;
 }
 
 .icons img {
@@ -1068,6 +1097,10 @@ header.sticky .search i {
 .subscribe-form div,
 .subscribe-form p {
     font-family: 'Calibri';
+}
+
+.subscribe-form label {
+    text-transform: uppercase;
 }
 
 /* Адаптивка (мобильные устройства) */
