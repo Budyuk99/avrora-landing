@@ -274,6 +274,7 @@ header.sticky .search i {
     letter-spacing: 0.05em;
     font-weight: 400;
     opacity: 80%;
+    width: 420px;
 }
 
 .slide-content-2 h2 {
@@ -441,6 +442,9 @@ header.sticky .search i {
 .slide-content {
     position: absolute;
     bottom: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .text_first {
@@ -547,6 +551,7 @@ header.sticky .search i {
     margin-bottom: 11px;
     line-height: 30px;
     letter-spacing: 0.05em;
+    width: 467px;
 }
 
 .slide-content-3 h2 {

@@ -3,7 +3,7 @@ $(document).ready(function(){
     $("#slider-1").owlCarousel({
         items: 1,
         loop: true,
-        autoplay: false,
+        autoplay: true,
         autoplayTimeout: 5000,
         autoplayHoverPause: true,
         nav: true,
@@ -71,7 +71,7 @@ $(document).ready(function(){
             0: { items: 1 },
             768: { items: 2 },
             1441: { items: 3 },
-            1920: { items: 4 }
+            1920: { items: 3 }
         }
     });
 
@@ -208,7 +208,7 @@ function renderMenu(gender) {
             0: { items: 1 },
             768: { items: 2 },
             1441: { items: 3 },
-            1920: { items: 4 }
+            1920: { items: 3 }
         }
     });
 
