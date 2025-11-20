@@ -454,7 +454,7 @@ header.sticky .search i {
     justify-content: center;
     align-items: center;
     gap: 15px;
-    max-width: 622px; /* Фиксируем максимальную ширину блока */
+    max-width: 650px; /* Фиксируем максимальную ширину блока */
     margin: 130px auto; /* Центрируем по горизонтали */
     text-align: center; /* Центрируем текст внутри */
 }
