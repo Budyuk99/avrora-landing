@@ -1442,6 +1442,26 @@ header {
     font-family: 'Calibri';
 }
 
+.item-video {
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* делаем как background-size: cover */
+    z-index: 0;
+}
+
+.item-video .slide-content {
+    position: relative;
+    z-index: 2; /* текст поверх видео */
+}
+
 /* Адаптивка (мобильные устройства) */
 @media(max-height: 800px){
     .side-menu_footer {
