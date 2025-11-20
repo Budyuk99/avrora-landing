@@ -57,15 +57,15 @@ $(document).ready(function(){
         items: 2,              // показываем два слайда одновременно
         loop: true,
         margin: 12,            // расстояние между слайдами
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 5000,
         autoplayHoverPause: true,
         nav: true,
         dots: false,
         smartSpeed: 1000,
         navText: [
-            '<img src="/assets/images/arrow-circle-left.svg" alt="prev" class="custom-arrow">',
-            '<img src="/assets/images/arrow-circle-right.svg" alt="next" class="custom-arrow">'
+            '<img src="/assets/images/left_arrow.svg" alt="prev" class="custom-arrow">',
+            '<img src="/assets/images/right_arrow.svg" alt="next" class="custom-arrow">'
         ],
         responsive: {
             0: { items: 1 },
@@ -200,8 +200,8 @@ function renderMenu(gender) {
         autoplayTimeout: 5000,
         autoplayHoverPause: true,
         navText: [
-            '<img src="/assets/images/arrow-circle-left.svg" alt="prev" class="custom-arrow">',
-            '<img src="/assets/images/arrow-circle-right.svg" alt="next" class="custom-arrow">'
+            '<img src="/assets/images/left_arrow.svg" alt="prev" class="custom-arrow">',
+            '<img src="/assets/images/right_arrow.svg" alt="next" class="custom-arrow">'
         ],
         smartSpeed: 800,
         responsive: {
