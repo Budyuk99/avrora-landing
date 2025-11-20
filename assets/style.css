@@ -58,6 +58,7 @@
 
 body {
     overflow-x: hidden;
+    background-color: #f7f4ef;
 }
 
 /* Стили для шапки */
@@ -272,6 +273,7 @@ header.sticky .search i {
     line-height: 23px;
     letter-spacing: 0.05em;
     font-weight: 400;
+    opacity: 80%;
 }
 
 .slide-content-2 h2 {
@@ -312,7 +314,6 @@ header.sticky .search i {
     display: flex;
     justify-content: space-between;
     transform: translateY(-50%);
-    padding: 0 30px;
 }
 
 /* Стили для точек-прямых линий - ДЛИНА 50PX */
@@ -682,7 +683,7 @@ header.sticky .search i {
 
 .fullscreen-banner {
   width: 100%;
-  height: 100vh; /* на весь экран */
+  height: 100%; /* на весь экран */
   background-image: url('/assets/images/fullscreen_banner.png');
   background-size: cover; /* картинка покрывает весь экран */
   background-position: center;
@@ -695,7 +696,7 @@ header.sticky .search i {
    /* отступы от краёв */
   margin-top: 18px;
   align-items: center;
-  padding: 0 60px;
+  padding: 160px 60px 67px 60px;
   gap: 243px;
 }
 
@@ -760,7 +761,7 @@ header.sticky .search i {
 }
 
 .banner-link_first {
-    color: #F7F4EF;
+    color: rgb(247, 244, 239);
     background-color: #C99F5E;
     width: 319px;
     height: 48px;
@@ -771,7 +772,7 @@ header.sticky .search i {
 }
 
 .banner-link_second {
-    color: #202020;
+    color: rgba(32, 32, 32, 0.6);
     background-color: #CFC6B0;
     width: 319px;
     height: 48px;
@@ -1365,6 +1366,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 15px;
 }
 
 .side-menu-list li {
@@ -1420,6 +1422,19 @@ header {
 
 .sub-menu-list {
     padding-top: 48px !important;
+}
+
+.owl-nav.disabled {
+    display: flex !important;
+}
+
+.banner-top_block ul li {
+    font-family: 'Calibri';
+    opacity: 90%;
+}
+
+.side-menu-list li a span {
+    font-family: 'Calibri';
 }
 
 /* Адаптивка (мобильные устройства) */

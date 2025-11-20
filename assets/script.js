@@ -3,7 +3,7 @@ $(document).ready(function(){
     $("#slider-1").owlCarousel({
         items: 1,
         loop: true,
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 5000,
         autoplayHoverPause: true,
         nav: true,
@@ -199,6 +199,10 @@ function renderMenu(gender) {
         autoplay: true,
         autoplayTimeout: 5000,
         autoplayHoverPause: true,
+        navText: [
+            '<img src="/assets/images/arrow-circle-left.svg" alt="prev" class="custom-arrow">',
+            '<img src="/assets/images/arrow-circle-right.svg" alt="next" class="custom-arrow">'
+        ],
         smartSpeed: 800,
         responsive: {
             0: { items: 1 },
