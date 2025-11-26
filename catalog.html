@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avrora Agency</title>
+    <title>Каталог</title>
     
     <!-- Подключаем Owl Carousel CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
@@ -12,7 +12,7 @@
     
     <link rel="stylesheet" href="/assets/style.css">
 </head>
-<body>
+<body class="catalog-page">
     <!-- Шапка -->
     <header id="header">
         <div class="header-left">
@@ -60,139 +60,152 @@
         </div>
     </header>
 
-    <!-- Слайдер -->
-    <section class="main-slider">
-        <div class="owl-carousel owl-theme" id="slider-1">
-            <div class="item" style="background-image: url('/assets/images/main_banner_1.svg');">
-                <div class="slide-content slide-content-1">
-                    <h2>Готова к комплиментам?<br> AURORA.luxe</h2>
-                    <a href="#" class="btn">Актуальное</a>
-                </div>
-            </div>
-            <div class="item item-video">
-                <video class="bg-video" autoplay muted loop playsinline>
-                    <source src="/assets/video/main_teaser_1.mp4" type="video/mp4">
-                </video>
-                <div class="slide-content slide-content-2">
-                    <p>Универсальность и капсульность</p>
-                    <h2>Создавайте вещи, которые легко комбинируются</h2>
-                    <p class="slide-content-2_text_2">AURORA.LUXE решит 95% ваших стилевых задач на высшем уровне</p>
-                    <a href="#" class="btn">Кастомизация</a>
-                </div>
-            </div>
-            <div class="item" style="background-image: url('/assets/images/main_banner_3.svg');">
-                <div class="slide-content slide-content-3">
-                    <h2>Отразите свою лучшую версию</h2>
-                    <a href="#" class="btn">Перейти в каталог</a>
-                </div>
-            </div>
-            <div class="item" style="background-image: url('/assets/images/main_banner_4.svg');">
-                <div class="slide-content slide-content-4">
-                    <h2>Шелк.Отдых.Совершенство</h2>
-                    <a href="#" class="btn">Актуальное</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="text_first">
-        <h2>Тактильность и кофморт</h2>
-        <p>
-            Шелк, кашемир, лен, высококачественный хлопок — это 
-            не просто материалы, это вторая кожа успешного человека. 
-            Почувствуйте, как это — быть в своей стихии
-        </p>
-        <a href="#" class="btn">Посмотреть все</a>
-    </section>
-
-    <!-- Второй слайдер -->
-    <section class="secondary-slider">
-        <div class="owl-carousel owl-theme" id="slider-2">
-            <div class="item" style="background-image: url('/assets/images/second_slider_1.svg');">
-                <div class="slide-content slide-content-1">
-                    <h2>Home chic & cruise</h2>
-                </div>
-            </div>
-            <div class="item" style="background-image: url('/assets/images/second_slider_2.svg');">
-                <div class="slide-content slide-content-2">
-                    <h2>Вечная классика</h2>
-                </div>
-            </div>
-            <div class="item" style="background-image: url('/assets/images/second_slider_3.png');">
-                <div class="slide-content slide-content-3">
-                    <h2>Family look</h2>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="full-banner">
-        <video class="banner-video" autoplay muted loop playsinline>
-            <source src="/assets/video/video.mov" type="video/mp4">
-            Ваш браузер не поддерживает видео.
-        </video>
-        <div class="banner-content">
-            <p>Эксклюзивные принты на шелке премиум-обработки</p>
-            <h2>Искусство в каждой нити</h2>
-            <a href="#" class="btn">В каталог</a>
-        </div>
-    </section>
-
-    <section class="two-images-slider">
-        <div class="owl-carousel owl-theme" id="two-images-carousel">
-            <div class="item image-block">
-                <div class="two-images_text">
-                    <p class="two-images_text-first">Женщины</p>
-                    <p class="two-images_text-second">Комбинезоны</p>
-                </div>
-                <img src="/assets/images/wooman.png" alt="wooman">
-            </div>
-            <div class="item image-block">
-                <div class="two-images_text">
-                    <p class="two-images_text-first">Мужчины</p>
-                    <p class="two-images_text-second">Рубашки</p>
-                </div>
-                <img src="/assets/images/man.png" alt="man">
-            </div>
-
-            <div class="item image-block">
-                <div class="two-images_text">
-                    <p class="two-images_text-first">Дети</p>
-                    <p class="two-images_text-second">Платья</p>
-                </div>
-                <img src="/assets/images/girl.png" alt="man">
-            </div>
-        </div>
-    </section>
-
-    <section class="full-image">
-        <video class="banner-video-second" autoplay muted loop playsinline>
-            <source src="/assets/video/video_short.mp4" type="video/mp4">
-            Ваш браузер не поддерживает видео.
-        </video>
-
-        <div class="image-text">
-            <img src="/assets/images/AURORA_limited_edition.svg" alt="AURORA_limited_edition">
-            <a href="#" class="btn">Перейти в каталог</a>
-        </div>
-    </section>
-
-    <section class="fullscreen-banner">
-        <div class="banner-top">
-            <h1>Выбери твой цвет настроения</h1>
-            <div class="banner-top_block">
-                <ul>
-                    <li>Философия индивидуального пошива за 3 дня</li>
-                    <li>Консультация личного стилиста</li>
-                    <li>Выбор принта</li>
-                    <li>Вышивка инициалов</li>
-                </ul>
-            </div>
+    <section class="catalog-section">
+        <div class="breadcrumbs">
+            <a href="#">Главная</a>
+            <span>/</span>
+            <a href="#">Каталог</a>
+            <span>/</span>
+            <span>Женщины</span>
         </div>
 
-        <div class="banner-bottom">
-            <a href="#" class="banner-link_first">Создать профиль</a>
-            <a href="#" class="banner-link_second">Перейти к кастомизации</a>
+        <h1 class="catalog-title">Женщины</h1>
+
+        <div class="category-tabs">
+            <div class="category-tab active">Все модели</div>
+            <div class="category-tab">Блузки</div>
+            <div class="category-tab">Рубашки</div>
+            <div class="category-tab">Брюки</div>
+            <div class="category-tab">Шорты</div>
+            <div class="category-tab">Топы</div>
+            <div class="category-tab">Халаты</div>
+            <div class="category-tab">Боди</div>
+            <div class="category-tab">Платья</div>
+            <div class="category-tab">Комбинезоны</div>
+        </div>
+
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/assets/images/catalog/1.webp" alt="ДЛИНА МАЙСК ИЗ НИГРАФЬЯНОГО ЦВЕТА">
+                    <div class="product-badge">Новинка</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">ДЛИНА МАЙСК ИЗ НИГРАФЬЯНОГО ЦВЕТА / 100 Г</h3>
+                    <div class="product-price">10 999 ₽</div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/assets/images/catalog/2.webp" alt="КОМБИНЕЗОН ИЗ НИГРАФЬЯНОГО ЦВЕТА">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">КОМБИНЕЗОН ИЗ НИГРАФЬЯНОГО ЦВЕТА / 100 Г</h3>
+                    <div class="product-price">10 999 ₽</div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/assets/images/catalog/3.webp" alt="БЛУЗКА НИГРАФЬЯНОГО ЦВЕТА">
+                    <div class="product-badge">Хит</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">БЛУЗКА НИГРАФЬЯНОГО ЦВЕТА ИЗ ЗАСТЕЖКИ СО ОРУДИЕМ СПОКОЕН ПЕЧЬ / 100 Г</h3>
+                    <div class="product-price">10 999 ₽</div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/assets/images/catalog/4.webp" alt="БРЮКИ ИЗ ПЕЧАЛЬНОГО ЦВЕТА">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">БРЮКИ ИЗ ПЕЧАЛЬНОГО ЦВЕТА ПЕРВЫЕ / 100 Г</h3>
+                    <div class="product-price">10 999 ₽</div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/assets/images/catalog/5.webp" alt="БРЮКИ ИЗ ПЕЧАЛЬНОГО ЦВЕТА">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">БРЮКИ ИЗ ПЕЧАЛЬНОГО ЦВЕТА ПЕРВЫЕ / 100 Г</h3>
+                    <div class="product-price">10 999 ₽</div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/assets/images/catalog/6.webp" alt="БРЮКИ ИЗ ПЕЧАЛЬНОГО ЦВЕТА">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">БРЮКИ ИЗ ПЕЧАЛЬНОГО ЦВЕТА ПЕРВЫЕ / 100 Г</h3>
+                    <div class="product-price">10 999 ₽</div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/assets/images/catalog/7.webp" alt="БРЮКИ ИЗ ПЕЧАЛЬНОГО ЦВЕТА">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">БРЮКИ ИЗ ПЕЧАЛЬНОГО ЦВЕТА ПЕРВЫЕ / 100 Г</h3>
+                    <div class="product-price">10 999 ₽</div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/assets/images/catalog/8.webp" alt="БРЮКИ ИЗ ПЕЧАЛЬНОГО ЦВЕТА">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">БРЮКИ ИЗ ПЕЧАЛЬНОГО ЦВЕТА ПЕРВЫЕ / 100 Г</h3>
+                    <div class="product-price">10 999 ₽</div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/assets/images/catalog/9.webp" alt="БРЮКИ ИЗ ПЕЧАЛЬНОГО ЦВЕТА">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">БРЮКИ ИЗ ПЕЧАЛЬНОГО ЦВЕТА ПЕРВЫЕ / 100 Г</h3>
+                    <div class="product-price">10 999 ₽</div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/assets/images/catalog/10.webp" alt="БРЮКИ ИЗ ПЕЧАЛЬНОГО ЦВЕТА">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">БРЮКИ ИЗ ПЕЧАЛЬНОГО ЦВЕТА ПЕРВЫЕ / 100 Г</h3>
+                    <div class="product-price">10 999 ₽</div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/assets/images/catalog/11.webp" alt="БРЮКИ ИЗ ПЕЧАЛЬНОГО ЦВЕТА">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">БРЮКИ ИЗ ПЕЧАЛЬНОГО ЦВЕТА ПЕРВЫЕ / 100 Г</h3>
+                    <div class="product-price">10 999 ₽</div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/assets/images/catalog/12.webp" alt="БРЮКИ ИЗ ПЕЧАЛЬНОГО ЦВЕТА">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">БРЮКИ ИЗ ПЕЧАЛЬНОГО ЦВЕТА ПЕРВЫЕ / 100 Г</h3>
+                    <div class="product-price">10 999 ₽</div>
+                </div>
+            </div>
         </div>
     </section>
 

@@ -277,4 +277,39 @@ function renderMenu(gender) {
         clearTimeout(hideTimeout);
     });
 
+    // Для страницы каталога - шапка всегда sticky
+if ($('body').hasClass('catalog-page')) {
+    // Принудительно устанавливаем sticky состояние
+    $('#header').addClass('sticky');
+    $('.search img').attr('src', '/assets/images/search_sticky.svg');
+    $('.icons_user img').attr('src', '/assets/images/user_sticky.svg');
+    $('.icons_heart img').attr('src', '/assets/images/heart_sticky.svg');
+    $('.icons_cart img').attr('src', '/assets/images/shopping-bag_sticky.svg');
+    $('.icons_global img').attr('src', '/assets/images/global_sticky.svg');
+    
+    // Отключаем логику изменения при скролле для каталога
+    $(window).off('scroll', updateHeader);
+} else {
+    // Обычная логика для главной страницы
+    function updateHeader() {
+        if ($(window).scrollTop() === 0) {
+            $('#header').removeClass('sticky');
+            $('.search img').attr('src', '/assets/images/search.svg');
+            $('.icons_user img').attr('src', '/assets/images/user.svg');
+            $('.icons_heart img').attr('src', '/assets/images/heart.svg');
+            $('.icons_cart img').attr('src', '/assets/images/shopping-bag.svg');
+            $('.icons_global img').attr('src', '/assets/images/global.svg');
+        } else {
+            $('#header').addClass('sticky');
+            $('.search img').attr('src', '/assets/images/search_sticky.svg');
+            $('.icons_user img').attr('src', '/assets/images/user_sticky.svg');
+            $('.icons_heart img').attr('src', '/assets/images/heart_sticky.svg');
+            $('.icons_cart img').attr('src', '/assets/images/shopping-bag_sticky.svg');
+            $('.icons_global img').attr('src', '/assets/images/global_sticky.svg');
+        }
+    }
+    
+    updateHeader();
+    $(window).scroll(updateHeader);
+}
 });
